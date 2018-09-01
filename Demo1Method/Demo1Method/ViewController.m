@@ -7,9 +7,8 @@
 //
 
 #import "ViewController.h"
-
 @interface ViewController ()
-
+@property (nonatomic, strong) UIButton *btn;
 @end
 
 @implementation ViewController
@@ -17,13 +16,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self.view addSubview:self.btn];
+    [self.btn addTarget:self action:@selector(btnClick) forControlEvents:(UIControlEventTouchUpInside)];
+}
+
+- (void)btnClick{
+    NSLog(@"正常点击");
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (UIButton *)btn{
+    if (!_btn) {
+        _btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _btn.frame = CGRectMake(100, 100, 100, 100);
+        [_btn setTitle:@"点击" forState:(UIControlStateNormal)];
+        [_btn setBackgroundColor:[UIColor blueColor]];
+    }
+    return _btn;
 }
+
 
 
 @end
