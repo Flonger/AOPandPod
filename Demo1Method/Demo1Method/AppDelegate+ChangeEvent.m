@@ -41,10 +41,10 @@ typedef void (^AspectHandlerBlock)(id<AspectInfo> aspectInfo);
         NSDictionary *config = configs[className];
         if (config[@"HookEvents"]) {
             for (NSDictionary *event in config[@"HookEvents"]) {
-                SEL selekor = NSSelectorFromString(event[@"EventSelectorName"]);
+                SEL selector = NSSelectorFromString(event[@"EventSelectorName"]);
                 AspectHandlerBlock block = event[@"EventHandlerBlock"];
                 
-                [class aspect_hookSelector:selekor
+                [class aspect_hookSelector:selector
                                withOptions:AspectPositionInstead
                                 usingBlock:^(id<AspectInfo> aspectInfo) {
                                     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6C5BB433652903481AC86135 /* Pods_Demo1Method.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBE2891EAB2D41135878DF8 /* Pods_Demo1Method.framework */; };
+		F68446CA21412ADC00FB75D7 /* AspectsHook.m in Sources */ = {isa = PBXBuildFile; fileRef = F68446C921412ADC00FB75D7 /* AspectsHook.m */; };
+		F68446CD21416D8800FB75D7 /* hookMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = F68446CC21416D8800FB75D7 /* hookMethod.js */; };
+		F68446D12142649F00FB75D7 /* NSInvocation+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F68446D02142649F00FB75D7 /* NSInvocation+Extension.m */; };
 		F6BA45C521391814007267BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BA45C421391814007267BF /* AppDelegate.m */; };
 		F6BA45C821391814007267BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BA45C721391814007267BF /* ViewController.m */; };
 		F6BA45CB21391814007267BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BA45C921391814007267BF /* Main.storyboard */; };
@@ -24,6 +27,11 @@
 		0E58ECD1F661D882AF9D9585 /* Pods-Demo1Method.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo1Method.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo1Method/Pods-Demo1Method.release.xcconfig"; sourceTree = "<group>"; };
 		36271CEF6140FD0F3A32D63A /* Pods-Demo1Method.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo1Method.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo1Method/Pods-Demo1Method.debug.xcconfig"; sourceTree = "<group>"; };
 		4FBE2891EAB2D41135878DF8 /* Pods_Demo1Method.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo1Method.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F68446C821412ADC00FB75D7 /* AspectsHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AspectsHook.h; sourceTree = "<group>"; };
+		F68446C921412ADC00FB75D7 /* AspectsHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AspectsHook.m; sourceTree = "<group>"; };
+		F68446CC21416D8800FB75D7 /* hookMethod.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = hookMethod.js; sourceTree = "<group>"; };
+		F68446CF2142649F00FB75D7 /* NSInvocation+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+Extension.h"; sourceTree = "<group>"; };
+		F68446D02142649F00FB75D7 /* NSInvocation+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+Extension.m"; sourceTree = "<group>"; };
 		F6BA45C021391814007267BF /* Demo1Method.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo1Method.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BA45C321391814007267BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F6BA45C421391814007267BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,6 +81,32 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F68446C721412AA900FB75D7 /* AspectsHook */ = {
+			isa = PBXGroup;
+			children = (
+				F68446C821412ADC00FB75D7 /* AspectsHook.h */,
+				F68446C921412ADC00FB75D7 /* AspectsHook.m */,
+			);
+			path = AspectsHook;
+			sourceTree = "<group>";
+		};
+		F68446CB21416D6900FB75D7 /* JS */ = {
+			isa = PBXGroup;
+			children = (
+				F68446CC21416D8800FB75D7 /* hookMethod.js */,
+			);
+			path = JS;
+			sourceTree = "<group>";
+		};
+		F68446CE2142646200FB75D7 /* NSInvocation */ = {
+			isa = PBXGroup;
+			children = (
+				F68446CF2142649F00FB75D7 /* NSInvocation+Extension.h */,
+				F68446D02142649F00FB75D7 /* NSInvocation+Extension.m */,
+			);
+			path = NSInvocation;
+			sourceTree = "<group>";
+		};
 		F6BA45B721391814007267BF = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +128,9 @@
 		F6BA45C221391814007267BF /* Demo1Method */ = {
 			isa = PBXGroup;
 			children = (
+				F68446CE2142646200FB75D7 /* NSInvocation */,
+				F68446CB21416D6900FB75D7 /* JS */,
+				F68446C721412AA900FB75D7 /* AspectsHook */,
 				F6BA45D92139186B007267BF /* method */,
 				F6BA45C321391814007267BF /* AppDelegate.h */,
 				F6BA45C421391814007267BF /* AppDelegate.m */,
@@ -183,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F68446CD21416D8800FB75D7 /* hookMethod.js in Resources */,
 				F6BA45D021391815007267BF /* LaunchScreen.storyboard in Resources */,
 				F6BA45CD21391815007267BF /* Assets.xcassets in Resources */,
 				F6BA45CB21391814007267BF /* Main.storyboard in Resources */,
@@ -253,7 +291,9 @@
 				F6BA45E22139216A007267BF /* UIViewController+Analytics.m in Sources */,
 				F6BA45E821392F93007267BF /* AppDelegate+ChangeEvent.m in Sources */,
 				F6BA45DF2139189C007267BF /* NSMutableArray+SafeArray.m in Sources */,
+				F68446D12142649F00FB75D7 /* NSInvocation+Extension.m in Sources */,
 				F6BA45E5213928BB007267BF /* NSMutableDictionary+SafeDictionary.m in Sources */,
+				F68446CA21412ADC00FB75D7 /* AspectsHook.m in Sources */,
 				F6BA45C821391814007267BF /* ViewController.m in Sources */,
 				F6BA45D321391815007267BF /* main.m in Sources */,
 				F6BA45C521391814007267BF /* AppDelegate.m in Sources */,
