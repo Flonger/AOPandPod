@@ -21,6 +21,7 @@
 		F6BA45E22139216A007267BF /* UIViewController+Analytics.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BA45E12139216A007267BF /* UIViewController+Analytics.m */; };
 		F6BA45E5213928BB007267BF /* NSMutableDictionary+SafeDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BA45E4213928BB007267BF /* NSMutableDictionary+SafeDictionary.m */; };
 		F6BA45E821392F93007267BF /* AppDelegate+ChangeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BA45E721392F93007267BF /* AppDelegate+ChangeEvent.m */; };
+		F6C9A54321511E0400669D29 /* AppStartupTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C9A54221511E0400669D29 /* AppStartupTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		F6BA45E4213928BB007267BF /* NSMutableDictionary+SafeDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+SafeDictionary.m"; sourceTree = "<group>"; };
 		F6BA45E621392F93007267BF /* AppDelegate+ChangeEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ChangeEvent.h"; sourceTree = "<group>"; };
 		F6BA45E721392F93007267BF /* AppDelegate+ChangeEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ChangeEvent.m"; sourceTree = "<group>"; };
+		F6C9A54121511E0400669D29 /* AppStartupTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppStartupTool.h; sourceTree = "<group>"; };
+		F6C9A54221511E0400669D29 /* AppStartupTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppStartupTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,7 @@
 		F6BA45C221391814007267BF /* Demo1Method */ = {
 			isa = PBXGroup;
 			children = (
+				F6C9A54021511D7B00669D29 /* AppStartManager */,
 				F68446CE2142646200FB75D7 /* NSInvocation */,
 				F68446CB21416D6900FB75D7 /* JS */,
 				F68446C721412AA900FB75D7 /* AspectsHook */,
@@ -158,6 +162,15 @@
 				F6BA45E4213928BB007267BF /* NSMutableDictionary+SafeDictionary.m */,
 			);
 			path = method;
+			sourceTree = "<group>";
+		};
+		F6C9A54021511D7B00669D29 /* AppStartManager */ = {
+			isa = PBXGroup;
+			children = (
+				F6C9A54121511E0400669D29 /* AppStartupTool.h */,
+				F6C9A54221511E0400669D29 /* AppStartupTool.m */,
+			);
+			path = AppStartManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +304,7 @@
 				F6BA45E22139216A007267BF /* UIViewController+Analytics.m in Sources */,
 				F6BA45E821392F93007267BF /* AppDelegate+ChangeEvent.m in Sources */,
 				F6BA45DF2139189C007267BF /* NSMutableArray+SafeArray.m in Sources */,
+				F6C9A54321511E0400669D29 /* AppStartupTool.m in Sources */,
 				F68446D12142649F00FB75D7 /* NSInvocation+Extension.m in Sources */,
 				F6BA45E5213928BB007267BF /* NSMutableDictionary+SafeDictionary.m in Sources */,
 				F68446CA21412ADC00FB75D7 /* AspectsHook.m in Sources */,
